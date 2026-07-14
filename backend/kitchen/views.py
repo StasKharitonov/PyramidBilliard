@@ -4,12 +4,8 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 
 from .models import FoodCategory, FoodItem, FoodOrder
-from .serializers import (
-    FoodCategorySerializer,
-    FoodItemSerializer,
-    FoodOrderCreateSerializer,
-    FoodOrderSerializer,
-)
+from .serializers import (FoodCategorySerializer, FoodItemSerializer,
+                          FoodOrderCreateSerializer, FoodOrderSerializer)
 
 
 class FoodCategoryViewSet(viewsets.ReadOnlyModelViewSet):
