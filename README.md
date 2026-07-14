@@ -1,4 +1,4 @@
-# 🎱 Бильярдный клуб «Пирамида»
+#  Бильярдный клуб «Пирамида»
 
 Полноценный сайт бильярдного клуба: бронирование столов, турниры и заказ еды
 с кухни. Backend на **Django + Django REST Framework + JWT**, frontend на
@@ -9,7 +9,7 @@
 
 ---
 
-## 🧱 Стек
+##  Стек
 
 | Слой       | Технологии                                                                 |
 | ---------- | -------------------------------------------------------------------------- |
@@ -20,7 +20,7 @@
 
 ---
 
-## 📁 Структура проекта
+##  Структура проекта
 
 ```
 .
@@ -55,7 +55,7 @@
 
 ---
 
-## 🚀 Запуск
+##  Запуск
 
 ### 1. Backend
 
@@ -92,7 +92,7 @@ npm run dev                        # http://localhost:5173
 
 ---
 
-## 👤 Тестовый пользователь
+##  Тестовый пользователь
 
 Создаётся командой `python manage.py seed`:
 
@@ -104,7 +104,7 @@ password: TestPassword123
 У этого пользователя уже есть демо-бронь, регистрация на турнир и заказ еды —
 чтобы профиль был не пустым.
 
-## 🔐 Django Admin
+##  Django Admin
 
 1. Создайте суперпользователя: `python manage.py createsuperuser`.
 2. Откройте **http://localhost:8000/admin/** и войдите.
@@ -116,7 +116,7 @@ password: TestPassword123
 
 ---
 
-## 🌐 API endpoints
+##  API endpoints
 
 Базовый префикс: `/api/`
 
@@ -229,7 +229,7 @@ password: TestPassword123
 
 ---
 
-## 🐘 Переключение на PostgreSQL
+##  Переключение на PostgreSQL
 
 В `backend/billiard_club/settings.py` база выбирается по переменным окружения.
 Установите драйвер (`pip install "psycopg[binary]"`, строка есть в
@@ -248,24 +248,3 @@ python manage.py migrate && python manage.py seed
 Модели и запросы менять не нужно — те же миграции применяются к PostgreSQL.
 
 ---
-
-## 🛠️ Возможные проблемы
-
-- **`npm install` падает с `EACCES` / `EEXIST` в `~/.npm/_cacache`** —
-  повреждены права на кэш npm. Исправьте одним из способов:
-  ```bash
-  sudo chown -R $(whoami) ~/.npm        # вернуть права себе
-  # или использовать временный кэш:
-  npm install --cache /tmp/npm-cache
-  ```
-
-- **`Error: That port is already in use` при `runserver`** — порт 8000 занят.
-  Запустите на другом порту: `python manage.py runserver 8001` и пропишите
-  `VITE_API_URL=http://localhost:8001/api` в `frontend/.env`.
-
-- **CORS-ошибки в консоли браузера** — убедитесь, что фронтенд работает на
-  `http://localhost:5173` (этот origin разрешён в `settings.py`,
-  `CORS_ALLOWED_ORIGINS`).
-
-- **401 при защищённых запросах** — токен истёк; приложение автоматически
-  обновляет access-токен по refresh-токену, при неудаче — разлогинивает.
