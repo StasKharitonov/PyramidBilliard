@@ -45,10 +45,6 @@ export default function Login() {
     <div className="container section auth">
       <div className="auth__card card">
         <h1>Вход в аккаунт</h1>
-        <p className="auth__hint">
-          Тестовый аккаунт: <code>test@example.com</code> /{' '}
-          <code>TestPassword123</code>
-        </p>
 
         <form onSubmit={handleSubmit} noValidate>
           <label className="field">
