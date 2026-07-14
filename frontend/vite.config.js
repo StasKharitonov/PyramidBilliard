@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
+    allowedHosts: true,
     // Convenience proxy: lets the frontend call '/api/...' during development
     // without CORS. The app uses the full backend URL by default (see
     // src/api/client.js), so this is an optional fallback.

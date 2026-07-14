@@ -8,12 +8,11 @@ export default function Footer() {
           <div className="logo logo--footer">
             <span className="logo__mark">🎱</span>
             <span className="logo__text">
-              Зелёное<span>сукно</span>
+              Пирам<span>ида</span>
             </span>
           </div>
           <p className="footer__about">
-            Премиальный бильярдный клуб в самом сердце города. Русский бильярд,
-            пул и снукер, турниры и авторская кухня.
+            Русский бильярд, пул и снукер, турниры и авторская кухня.
           </p>
         </div>
 
@@ -27,25 +26,20 @@ export default function Footer() {
 
         <div className="footer__col">
           <h4>Контакты</h4>
-          <p>📍 ул. Бильярдная, 8, Москва</p>
+          <p> ул. Промышленная, 20, Чайковский</p>
           <p>
-            📞 <a href="tel:+74951234567">+7 (495) 123-45-67</a>
-          </p>
-          <p>
-            ✉️ <a href="mailto:hello@green-cloth.ru">hello@green-cloth.ru</a>
+             <a>+7 (963) 018-62-60</a>
           </p>
         </div>
 
         <div className="footer__col">
           <h4>Часы работы</h4>
-          <p>Пн–Чт: 12:00 — 02:00</p>
-          <p>Пт–Сб: 12:00 — 06:00</p>
-          <p>Вс: 12:00 — 00:00</p>
+          <p>Пн–Вс: 10:00 — 02:00</p>
         </div>
       </div>
       <div className="footer__bottom">
         <div className="container">
-          © {new Date().getFullYear()} Бильярдный клуб «Зелёное сукно». Все права защищены.
+          © {new Date().getFullYear()} Бильярдный клуб «Пирамида». Все права защищены.
         </div>
       </div>
     </footer>

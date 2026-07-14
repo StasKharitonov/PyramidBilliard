@@ -9,7 +9,7 @@ def api_root(_request):
     """Tiny health/landing endpoint so visiting the API base isn't a 404."""
     return JsonResponse(
         {
-            "service": "Billiard Club API",
+            "service": "Пирамида API",
             "status": "ok",
             "endpoints": {
                 "auth": "/api/auth/",

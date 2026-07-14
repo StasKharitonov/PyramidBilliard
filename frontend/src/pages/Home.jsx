@@ -1,26 +1,26 @@
 import { Link } from 'react-router-dom'
 
 const ADVANTAGES = [
-  {
-    icon: '🎱',
-    title: '6 профессиональных столов',
-    text: 'Русский бильярд, американский пул и снукер от ведущих производителей.',
-  },
-  {
-    icon: '🏆',
-    title: 'Регулярные турниры',
-    text: 'Турниры с реальными призовыми фондами для игроков любого уровня.',
-  },
-  {
-    icon: '🍽️',
-    title: 'Авторская кухня',
-    text: 'Свежая еда и напитки прямо к вашему столу, пока вы играете.',
-  },
-  {
-    icon: '⭐',
-    title: 'Премиальная атмосфера',
-    text: 'Уютные залы, профессиональное освещение и внимательный сервис.',
-  },
+  // {
+  //   icon: '🎱',
+  //   title: '6 профессиональных столов',
+  //   text: 'Русский бильярд, американский пул и снукер от ведущих производителей.',
+  // },
+  // {
+  //   icon: '🏆',
+  //   title: 'Регулярные турниры',
+  //   text: 'Турниры с реальными призовыми фондами для игроков любого уровня.',
+  // },
+  // {
+  //   icon: '🍽️',
+  //   title: 'Авторская кухня',
+  //   text: 'Свежая еда и напитки прямо к вашему столу, пока вы играете.',
+  // },
+  // {
+  //   icon: '⭐',
+  //   title: 'Премиальная атмосфера',
+  //   text: 'Уютные залы, профессиональное освещение и внимательный сервис.',
+  // },
 ]
 
 const SCHEDULE = [
@@ -34,12 +34,12 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="container hero__inner">
-          <span className="hero__eyebrow">Премиальный бильярдный клуб</span>
+          <span className="hero__eyebrow">Бильярдный клуб</span>
           <h1 className="hero__title">
-            Зелёное <span>сукно</span>
+            Пирам<span>ида</span>
           </h1>
           <p className="hero__subtitle">
-            Идеальные столы, атмосфера большой игры и кухня высокого уровня.
+            Идеальные столы и атмосфера большой игры.
             Бронируйте стол, участвуйте в турнирах и наслаждайтесь вечером.
           </p>
           <div className="hero__actions">
@@ -49,11 +49,11 @@ export default function Home() {
             <Link to="/tournaments" className="btn btn--outline">
               Посмотреть турниры
             </Link>
-            <Link to="/menu" className="btn btn--ghost">
+            {/* <Link to="/menu" className="btn btn--ghost">
               Меню кухни
-            </Link>
+            </Link> */}
           </div>
-          <dl className="hero__stats">
+          {/* <dl className="hero__stats">
             <div>
               <dt>6</dt>
               <dd>столов</dd>
@@ -66,7 +66,7 @@ export default function Home() {
               <dt>18ч</dt>
               <dd>в день</dd>
             </div>
-          </dl>
+          </dl> */}
         </div>
       </section>
 
@@ -74,7 +74,7 @@ export default function Home() {
         <header className="page-head page-head--center">
           <h2>О клубе</h2>
           <p>
-            «Зелёное сукно» — это место, где встречаются профессионалы и
+            «Пирамида» — это место, где встречаются профессионалы и
             любители бильярда. Мы создали пространство, в котором каждая партия
             становится событием: турнирные столы, идеальное освещение и сервис,
             который заботится о каждой детали вашего вечера.
@@ -82,7 +82,7 @@ export default function Home() {
         </header>
       </section>
 
-      <section className="section section--alt">
+      {/* <section className="section section--alt">
         <div className="container">
           <header className="page-head page-head--center">
             <h2>Почему выбирают нас</h2>
@@ -97,7 +97,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="section container">
         <div className="grid grid--split">
@@ -133,7 +133,7 @@ export default function Home() {
               <li>
                 <span>Почта</span>
                 <strong>
-                  <a href="mailto:hello@green-cloth.ru">hello@green-cloth.ru</a>
+                  <a href="mailto:hello@pyramida.ru">hello@pyramida.ru</a>
                 </strong>
               </li>
               <li>

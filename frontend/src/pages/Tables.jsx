@@ -7,8 +7,6 @@ import { EmptyState, ErrorState, Loader } from '../components/States'
 const FILTERS = [
   { value: '', label: 'Все столы' },
   { value: 'russian_pool', label: 'Русский бильярд' },
-  { value: 'american_pool', label: 'Американский пул' },
-  { value: 'snooker', label: 'Снукер' },
 ]
 
 export default function Tables() {

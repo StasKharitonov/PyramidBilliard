@@ -1,24 +1,11 @@
-"""
-Django settings for the billiard_club project.
-
-Local development uses SQLite. The project is written so that switching to
-PostgreSQL only requires setting the DATABASE_* environment variables below
-(no model or query changes needed).
-"""
-
 import os
 from datetime import timedelta
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# --------------------------------------------------------------------------- #
-# Core
-# --------------------------------------------------------------------------- #
 SECRET_KEY = os.environ.get(
     "DJANGO_SECRET_KEY",
-    "django-insecure-dev-key-change-me-in-production-0a1b2c3d4e5f6g7h8i9j",
 )
 
 DEBUG = os.environ.get("DJANGO_DEBUG", "True").lower() == "true"
@@ -27,10 +14,6 @@ ALLOWED_HOSTS = os.environ.get(
     "DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1,0.0.0.0"
 ).split(",")
 
-
-# --------------------------------------------------------------------------- #
-# Applications
-# --------------------------------------------------------------------------- #
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -102,14 +85,10 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
+            "NAME": "/data/db.sqlite3",
         }
     }
 
-
-# --------------------------------------------------------------------------- #
-# Authentication
-# --------------------------------------------------------------------------- #
 AUTH_USER_MODEL = "accounts.User"
 
 AUTH_PASSWORD_VALIDATORS = [

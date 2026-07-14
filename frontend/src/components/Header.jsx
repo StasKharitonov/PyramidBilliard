@@ -24,7 +24,7 @@ export default function Header() {
         <Link to="/" className="logo" onClick={close}>
           <span className="logo__mark">🎱</span>
           <span className="logo__text">
-            Зелёное<span>сукно</span>
+            Пирам<span>ида</span>
           </span>
         </Link>
 
